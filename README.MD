@@ -1,81 +1,64 @@
 <div align="center">
 
-  <img src="./.github/assets/blue-saiyan-bg.png" alt="Logo" height="200">
-  <h1 align="center"><strong>NODE BOILERPLATE - BLUE EDITION</strong></h1>
+  <h1 align="center"><strong>API Fórmula 1 - Node.js + TypeScript</strong></h1>
   <p align="center">
-	  Don't start a new Node project from zero!<br> Use this simple <b>Nodejs</b> boilerplate with pre-configured <b>Typescript</b> in a modern way.
+      Uma API simples para consultar equipes e pilotos da Fórmula 1.<br>
+      Construída com <b>Node.js</b>, <b>TypeScript</b> e <b>Fastify</b>.
   </p>
 
 </div>
 
 <br />
 
-  <!-- Badges -->
-<div align="center">
-  
-  [![TypeScript version][ts-badge]][typescript-5-4]
-  [![Node.js version][nodejs-badge]][nodejs]
+# 🚀 Tecnologias
 
-</div>
+- **Node.js** v20+
+- **TypeScript**
+- **Fastify**
+- **@fastify/cors**
 
-# 🚀 Technologies
+# 📦 Endpoints
 
-This code source was developed with the following items:
+A API disponibiliza os seguintes endpoints:
 
-### 📦 Dependencies
+- `GET /teams`  
+  Retorna a lista de equipes da Fórmula 1.
 
-- [typescript][typescript-npm] - Superset for application scale JavaScript development
-- [tsx][tsx-npm] - TypeScript Execute (tsx): Enable Node.js to run TypeScript
-- [tsup][tsup-npm] - Bundle your TypeScript library with no config, powered by esbuild
-- [@types/node][@types/node-npm] - type definitions for node
+- `GET /drivers`  
+  Retorna a lista de pilotos da Fórmula 1.
 
-### 📄 Files
+- `GET /drivers/:id`  
+  Retorna os dados de um piloto pelo seu ID.
 
-- `.gitignore` - Ignore folders like node_modules
-- `.env` - Enviroment variables
-- `tsconfig.json` - Typescript configure Options
+# ⚡ Scripts
 
-### ⚡ Scripts
+- `npm run start:dev`: Executa o servidor em modo desenvolvimento.
+- `npm run start:watch`: Executa o servidor em modo desenvolvimento com recarga automática.
+- `npm run dist`: Compila os arquivos TypeScript para JavaScript na pasta dist.
+- `npm run start:dist`: Compila e executa a versão gerada na pasta dist.
 
-- `npm run dist`: Compiles TypeScript files to JavaScript in the dist directory.
-- `npm run start:dev`: Runs the server in development mode with environment variables loaded from the .env file.
-- `npm run start:watch`: Runs the server in development mode with support for automatic reload on file changes.
-- `npm run start:dist`: Compiles the project and runs the compiled version from the dist directory.
+# 👨‍💻 Como usar
 
-# 👨‍💻 How To Use
-
-click in **[Use this template]** OR
-
-To clone and run this application, you'll need [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) + [NPM v10+](https://nodejs.org/en/) installed on your computer. From your command line:
+Você precisa ter [Git](https://git-scm.com), [Node.js v20+](https://nodejs.org/en/) e [NPM v10+](https://nodejs.org/en/) instalados.
 
 ```bash
-# Clone this repository
-$ git clone https://github.com/felipeAguiarCode/node-blue-boilerplate
+# Clone este repositório
+git clone https://github.com/seu-usuario/seu-repo.git
 
-# Go into the repository
-$ cd node-blue-boilerplate
+# Entre na pasta do projeto
+cd seu-repo
 
-# Install dependencies
-$ npm install
+# Instale as dependências
+npm install
+
+# Execute o servidor em modo desenvolvimento
+npm run start:dev
 ```
 
-## Author
+A API estará disponível em [http://localhost:3333](http://localhost:3333).
 
-| [<img src="https://avatars3.githubusercontent.com/u/37452836?s=96&v=4"><br><sub>Felipe Aguiar</sub>](https://github.com/felipeAguiarCode) |
-| :---------------------------------------------------------------------------------------------------------------------------------------: |
-|                                            [Linkedin](www.linkedin.com/in/felipe-aguiar-exe/)                                             |
+# Créditos
 
-# Credits
+Ícones por [Pino Lamanna][dribble-icon]
 
-icons by [Pino Lamanna][dribble-icon]
-
-[typescript]: https://www.typescriptlang.org/
-[typescript-5-4]: https://www.typescriptlang.org/
-[ts-badge]: https://img.shields.io/badge/TypeScript-5.4-blue.svg
-[nodejs-badge]: https://img.shields.io/badge/Node.js->=%2020.00-blue.svg
-[nodejs]: https://nodejs.org/
 [dribble-icon]: https://dribbble.com/Schakalwal
-[typescript-npm]: https://www.npmjs.com/package/typescript
-[tsx-npm]: https://www.npmjs.com/package/tsx
-[tsup-npm]: https://www.npmjs.com/package/tsup
-[@types/node-npm]: https://www.npmjs.com/package/@types/node
